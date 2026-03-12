@@ -6,7 +6,7 @@ import { Solution } from "./homepage/Solution";
 import { Context } from "./homepage/Context";
 import { Demo } from "./homepage/Demo";
 import { HowItWorks } from "./homepage/HowItWorks";
-import { Example } from "./homepage/Example";
+import { WhyThisMatters } from "./homepage/WhyThisMatters";
 import { CTA } from "./homepage/CTA";
 import { Footer } from "./homepage/Footer";
 
@@ -18,15 +18,15 @@ export default function Home() {
         <div className="relative z-10">
           <Header />
           <Hero />
-          <Problem />
+          <section id="problem"><Problem /></section>
         </div>
       </div>
-      <Solution />
-      <Context />
-      <Demo />
-      <HowItWorks />
-      <Example />
-      <CTA />
+      <section id="solution"><Solution /></section>
+      <section id="context-packs"><Context /></section>
+      <section id="demo"><Demo /></section>
+      <section id="how-it-works"><HowItWorks /></section>
+      <section id="why-this-matters"><WhyThisMatters /></section>
+      <section id="cta"><CTA /></section>
       <Footer />
     </div>
   );

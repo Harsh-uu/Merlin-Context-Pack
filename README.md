@@ -1,36 +1,143 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Merlin Prompt Suggestions – UI Concept
 
-## Getting Started
+A product concept exploring **automatic prompt suggestions for Merlin AI based on the webpage a user is browsing.**
 
-First, run the development server:
+Instead of users thinking of prompts from scratch, Merlin could suggest **relevant prompts tailored to the page context**, helping users start faster and get better results.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+AI assistants are powerful, but many users struggle with **what prompt to write**.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+While **Merlin already understands the context of the webpage**, users still need to manually think of prompts.
 
-## Learn More
+This project explores a simple UX improvement:
 
-To learn more about Next.js, take a look at the following resources:
+**What if Merlin suggested useful prompts automatically for the page you're on?**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+For example:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### On LinkedIn
 
-## Deploy on Vercel
+* Write a thoughtful comment on this post
+* Turn this post into a carousel
+* Extract the key insights
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### On YouTube
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Summarize this video
+* Extract actionable lessons
+* Turn this video into a blog post outline
+
+### On GitHub
+
+* Explain this repository to a beginner
+* Suggest improvements for this code
+* Generate documentation
+
+The goal is to reduce **prompt friction** and make AI assistants easier to use.
+
+---
+
+# Concept
+
+### Current Workflow
+
+User opens Merlin → thinks of a prompt → types it → runs AI.
+
+### Proposed Workflow
+
+User opens Merlin → sees suggested prompts → clicks one → prompt auto-fills → runs AI.
+
+This transforms the experience from:
+
+**Think → Type → Run**
+
+to
+
+**Click → Run**
+
+---
+
+# Context Packs
+
+The concept introduces **Context Packs**.
+
+A Context Pack is a **collection of prompts designed for a specific type of webpage or workflow.**
+
+Examples:
+
+| Website  | Context Pack Purpose                                |
+| -------- | --------------------------------------------------- |
+| LinkedIn | Comment writing, post analysis, content repurposing |
+| YouTube  | Video summarization, key insights extraction        |
+| GitHub   | Code explanation, documentation, improvements       |
+| Articles | Summaries, insights, social media threads           |
+
+When Merlin detects the current website, it can load the corresponding **Context Pack** and suggest relevant prompts.
+
+---
+
+# Features in this Prototype
+
+* Prompt suggestions grouped by website context
+* Prompt library UI
+* One-click prompt usage
+* Interactive demo of prompt selection
+* Explanation of how contextual prompt suggestions could work
+
+This prototype focuses on **user experience and product exploration**, not backend AI implementation.
+
+---
+
+# How It Works (Conceptual)
+
+1. Merlin detects the website currently open in the browser.
+2. The interface loads a relevant **Context Pack**.
+3. Suggested prompts appear in the sidebar.
+4. Clicking a prompt automatically fills the chat input.
+5. The user runs the prompt instantly.
+
+---
+
+# Purpose of This Project
+
+This is **not an official feature**.
+
+It is a **product concept prototype inspired by the workflow of** Merlin AI.
+
+The goal is to explore:
+
+* AI product UX
+* Prompt workflows
+* Context-aware productivity tools
+
+---
+
+# Tech Stack
+
+* Next.js
+* React
+* Tailwind CSS
+* Vercel (deployment)
+
+---
+
+# Possible Future Improvements
+
+If developed further, this idea could expand with features such as:
+
+* AI-ranked prompt suggestions
+* Community prompt packs
+* Prompt performance scoring
+* Dynamic prompts based on page content
+* User-customizable prompt packs
+
+---
+
+# Author
+
+Harsh
+
+Product concept prototype exploring prompt suggestions for AI assistants.

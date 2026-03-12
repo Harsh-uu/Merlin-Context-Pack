@@ -142,7 +142,7 @@ const contextPacks = [
 
 export const Context = () => {
   return (
-    <div className="max-w-5xl mx-auto px-4 py-24">
+    <div className="max-w-5xl mx-auto px-4 py-16 lg:py-20">
       <p className="text-sm text-[#666fdf] font-semibold tracking-widest uppercase text-center">
         Context Packs
       </p>

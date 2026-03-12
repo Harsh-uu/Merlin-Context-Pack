@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={myFont.variable}>
-      <body>{children}</body>
+      <body className="bg-[#0b0c14]">{children}</body>
     </html>
   );
 }
